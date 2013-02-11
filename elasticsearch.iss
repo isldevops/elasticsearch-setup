@@ -60,7 +60,7 @@ Name: "{app}\logs"
 [Files]
 Source: "setup-helper.dll"; DestDir: "{app}"
 Source: "vendor\SetACL-2.2.0\SetACL.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall ignoreversion
-Source: "vendor\commons-daemon-1.0.11-bin-windows\{#Prunsrv}"; DestDir: "{app}\bin"; DestName: "elasticsearchw.exe"
+Source: "vendor\commons-daemon-1.0.12-bin-windows\{#Prunsrv}"; DestDir: "{app}\bin"; DestName: "elasticsearchw.exe"
 Source: "{#ESPath}\bin\elasticsearch.bat"; DestDir: "{app}\bin"
 Source: "{#ESPath}\bin\plugin.bat"; DestDir: "{app}\bin"
 Source: "{#ESPath}\lib\elasticsearch-{#AppVersion}.jar"; DestDir: "{app}\lib"
