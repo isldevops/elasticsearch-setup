@@ -21,7 +21,6 @@ ISCCOPT+= -d_WIN64
 endif
 
 all: 32bit 64bit
-	@echo "##teamcity[buildNumber '$(ES_VERSION)']"
 
 32bit:
 	@X64=false $(MAKE) setup
@@ -30,6 +29,7 @@ all: 32bit 64bit
 	@X64=true $(MAKE) setup
 
 jar: elasticsearchw.jar
+	@echo "##teamcity[buildNumber '$(ES_VERSION)_{build.number}']"
 
 elasticsearchw.jar: src/org/elasticsearch/service/*.java
 	mkdir -p out
