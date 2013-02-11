@@ -29,7 +29,7 @@ all: 32bit 64bit
 	@X64=true $(MAKE) setup
 
 jar: elasticsearchw.jar
-	@echo "##teamcity[buildNumber '$(ES_VERSION).{build.number}']"
+	@echo "##teamcity[buildNumber '$(ES_VERSION)']"
 
 elasticsearchw.jar: src/org/elasticsearch/service/*.java
 	mkdir -p out
