@@ -1,5 +1,5 @@
 # elasticsearch-setup 
-This repository is forked from the original at [elasticsearch-setup](http://ruilopes.com/elasticsearch-setup/) with a few updates to make building of the source easier.
+This repository is forked from the original at [elasticsearch-setup](https://github.com/rgl/elasticsearch-setup) with a few updates to make building of the source easier.
 
 ## Option 1: Download pre-built binaries
 
