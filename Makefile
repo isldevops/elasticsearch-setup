@@ -5,7 +5,6 @@ ES_NAME=elasticsearch-$(ES_VERSION)
 ES_HOME=vendor/$(ES_NAME)
 ES_LIB=$(ES_HOME)/lib
 ES_JAR=$(ES_LIB)/$(ES_NAME).jar
-
 COMMONS_DAEMON_VERSION=1.0.12
 COMMONS_DAEMON_NAME=commons-daemon-$(COMMONS_DAEMON_VERSION)-bin-windows
 COMMONS_DAEMON_HOME=vendor/$(COMMONS_DAEMON_NAME)
@@ -22,6 +21,7 @@ ISCCOPT+= -d_WIN64
 endif
 
 all: 32bit 64bit
+	@echo "##teamcity[buildNumber '$(ES_VERSION)']"
 
 32bit:
 	@X64=false $(MAKE) setup

@@ -5,7 +5,7 @@ This repository is forked from the original at [elasticsearch-setup](https://git
 
 + Available from [http://ruilopes.com/elasticsearch-setup/](http://ruilopes.com/elasticsearch-setup/)
 
-## Option 2: Build elasticsearch-setup binaries yourself.
+## Option 2: Build elasticsearch-setup binaries yourself
 
 **Note:** The following assumes a vanilla Windows 7 SP1 install.
  
@@ -22,6 +22,11 @@ This repository is forked from the original at [elasticsearch-setup](https://git
 		C:\Path\To\Cloned\Repo\vendor\>jdk-7u13-windows-x64.exe
 		
 		*Note:* Install by accepting all defaults		
+		
+1. Add location (default) of Java JDK to system variables, the full JDK is required as we use JAR.exe during build
+		
+		C:\>setx PATH "C:\Program Files\Java\jdk1.7.0_13\bin;%PATH%"
+		C:\>setx JAVA_HOME "C:\Program Files\Java\jdk1.7.0_13\bin;"
 		
 1. Install Unicode Inno Setup
 
@@ -66,6 +71,10 @@ All going well, the above should download the ElasticSearch	and Common Daemon zi
 
 		Successful compile (4.134 sec). Resulting Setup program filename is: c:\development\Github\elasticsearch-setup\elasticsearch-0.20.2-setup-64-bit.exe 
 		make[1]: Leaving directory `/c/development/Github/elasticsearch-setup' 	
+
+##Execute build from TeamCity (optional)
+
+1. TBC
 		
 ## Running the installer 
 
